@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Quiz - QuizRanking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        // Cores do design
+                        'quiz-purple': '#7F56D9', // Cor principal roxa
+                        'quiz-dark': '#101828',   
+                        'quiz-light-gray': '#F9FAFB', 
+                        'quiz-text': '#344054', 
+                        'quiz-progress': '#374151',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 font-sans flex items-center justify-center min-h-screen p-4">
+
+    <div class="bg-white rounded-lg shadow-xl w-full max-w-lg p-6 md:p-8">
+
+        <h1 class="text-2xl font-bold text-center text-gray-900 mb-6">
+            Nome Disciplina
+        </h1>
+
+        <div class="bg-purple-50 rounded-lg p-6 text-center">
+            
+            <h2 class="text-xl font-semibold text-gray-800">
+                Tópico da Questão
+            </h2>
+            
+            <p class="text-gray-600 my-4 text-lg">
+                Qual o maior time brasileiro?
+            </p>
+
+            <div class="flex flex-col space-y-3 max-w-xs mx-auto">
+                <button class="bg-purple-600 text-white font-medium py-3 px-6 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 transition-colors">
+                    Fortaleza
+                </button>
+                <button class="bg-purple-600 text-white font-medium py-3 px-6 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 transition-colors">
+                    Fortaleza
+                </button>
+                <button class="bg-purple-600 text-white font-medium py-3 px-6 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 transition-colors">
+                    Fortaleza
+                </button>
+                <button class="bg-purple-600 text-white font-medium py-3 px-6 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 transition-colors">
+                    Potiguar
+                </button>
+            </div>
+
+            <div class="mt-8 text-lg font-medium text-gray-700">
+                Cronômetro
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center mt-8">
+            
+            <button class="bg-purple-600 text-white font-medium py-2 px-6 rounded-lg hover:bg-purple-700 transition-colors">
+                Retornar
+            </button>
+            
+            <span class="text-lg font-semibold text-gray-700">
+                7/10
+            </span>
+            
+            <button class="bg-purple-600 text-white font-medium py-2 px-6 rounded-lg hover:bg-purple-700 transition-colors">
+                Pular
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrícula - QuizRanking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        // Cores do design
+                        'quiz-purple': '#7F56D9', 
+                        'quiz-dark': '#101828',   
+                        'quiz-light-gray': '#F9FAFB', 
+                        'quiz-text': '#344054', 
+                        'quiz-progress': '#374151',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 font-sans">
+
+     <header class="bg-black text-white ">
+        <div class="container mx-auto max-w-7xl px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold  px-2 py-1">QuizRanking</h1>
+            <button class="bg-white text-black text-sm font-semibold py-2 px-4 rounded-lg">
+                Voltar
+            </button>
+        </div>
+    </header>
+
+    <main class="bg-white text-quiz-text min-h-screen">
+        
+        <div class="container mx-auto max-w-4xl px-6 py-10"> <h1 class="text-4xl font-bold text-center text-gray-900 mb-10">
+                Matrícula
+            </h1>
+
+            <div class="relative mb-8">
+                <input type="text" placeholder="Pesquisar disciplina" 
+                       class="w-full border border-gray-300 rounded-lg py-3 px-4 pl-12 text-md focus:outline-none focus:ring-2 focus:ring-purple-600"
+                >
+                <svg class="w-6 h-6 text-gray-400 absolute left-4 top-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg overflow-hidden">
+                
+                <div class="grid grid-cols-5 gap-4 items-center bg-quiz-light-gray px-6 py-3 border-b border-gray-200">
+                    <div class="col-span-2">
+                        <span class="text-sm font-semibold text-gray-600 uppercase">Nome</span>
+                    </div>
+                    <div class="col-span-2">
+                        <span class="text-sm font-semibold text-gray-600 uppercase">Professor</span>
+                    </div>
+                    <div class="col-span-1">
+                        </div>
+                </div>
+
+                <div class="grid grid-cols-5 gap-4 items-center px-6 py-4 border-b border-gray-100 hover:bg-gray-50">
+                    <div class="col-span-2">
+                        <p class="text-md font-medium text-gray-900">Disciplina</p>
+                    </div>
+                    <div class="col-span-2">
+                        <p class="text-md text-gray-600">Professor</p>
+                    </div>
+                    <div class="col-span-1 flex justify-end">
+                        <button class="bg-quiz-dark text-white py-2 px-4 rounded-lg text-sm font-medium hover:bg-gray-800 flex items-center space-x-1">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            <span>Matrícula</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-5 gap-4 items-center px-6 py-4 border-b border-gray-100 hover:bg-gray-50">
+                    <div class="col-span-2">
+                        <p class="text-md font-medium text-gray-900">Sistemas Operacionais</p>
+                    </div>
+                    <div class="col-span-2">
+                        <p class="text-md text-gray-600">Prof. Jeferson</p>
+                    </div>
+                    <div class="col-span-1 flex justify-end">
+                        <button class="bg-quiz-dark text-white py-2 px-4 rounded-lg text-sm font-medium hover:bg-gray-800 flex items-center space-x-1">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            <span>Matrícula</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-5 gap-4 items-center px-6 py-4 border-b border-gray-100 hover:bg-gray-50">
+                    <div class="col-span-2">
+                        <p class="text-md font-medium text-gray-900">LFA</p>
+                    </div>
+                    <div class="col-span-2">
+                        <p class="text-md text-gray-600">Prof. Jeferson</p>
+                    </div>
+                    <div class="col-span-1 flex justify-end">
+                        <button class="bg-quiz-dark text-white py-2 px-4 rounded-lg text-sm font-medium hover:bg-gray-800 flex items-center space-x-1">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            <span>Matrícula</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-5 gap-4 items-center px-6 py-4 hover:bg-gray-50">
+                    <div class="col-span-2">
+                        <p class="text-md font-medium text-gray-900">Matemática Discreta</p>
+                    </div>
+                    <div class="col-span-2">
+                        <p class="text-md text-gray-600">Prof. Daniel</p>
+                    </div>
+                    <div class="col-span-1 flex justify-end">
+                        <button class="bg-quiz-dark text-white py-2 px-4 rounded-lg text-sm font-medium hover:bg-gray-800 flex items-center space-x-1">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            <span>Matrícula</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </main>
+
+</body>
+</html>
