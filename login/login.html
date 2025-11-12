@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="css/login.css">
     <title>Login</title>
 </head>
 <body>
@@ -33,21 +33,8 @@
     <p>&copy; 2025 QuizRanking. Todos os direitos reservados.</p>
 </footer>
 
-<script>
-document.getElementById('formLogin').addEventListener('submit', function(event) {
-    event.preventDefault();
+<script src="../login/script/login.js">
 
-    const email = document.getElementById('email').value.trim();
-    const senha = document.getElementById('senha').value.trim();
-
-    if (email === '' || senha === '') {
-        alert('Por favor, preencha todos os campos.');
-        return;
-    }
-
-    alert('Login realizado com sucesso!');
-    window.location.href = "../aluno/dashboard-aluno.html";
-});
 </script>
 
 
