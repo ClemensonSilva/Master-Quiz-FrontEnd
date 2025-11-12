@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório Questionário - QuizRanking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        'quiz-purple': '#7F56D9',
+                        'quiz-dark': '#101828',
+                        'quiz-light-gray': '#F9FAFB',
+                        'quiz-text': '#344054',
+                        'quiz-progress': '#374151',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 font-sans">
+    <header class="bg-black text-white">
+        <div class="container mx-auto max-w-7xl px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold px-2 py-1">QuizRanking</h1>
+            <button class="bg-white text-black text-sm font-semibold py-2 px-4 rounded-lg">
+                Voltar
+            </button>
+        </div>
+    </header>
+
+    <main class="bg-white text-quiz-text min-h-screen">
+        <div class="container mx-auto max-w-7xl px-6 py-8">
+            <section class="mb-8">
+                <h2 class="text-3xl font-semibold text-gray-900 mb-2">Questionário 1 - Relatório</h2>
+            </section>
+
+            <section class="mb-12">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-6">Desempenho da Turma</h3>
+                
+                <div class="mb-8">
+                    <h4 class="text-lg font-medium text-gray-800 mb-4">Porcentagem de Acertos</h4>
+                    
+                    <!-- Gráfico de barras vertical -->
+                    <div class="flex items-end space-x-4 h-48 mb-2 border-l border-b border-gray-300 pl-4 pb-4">
+                        <div class="flex flex-col items-center">
+                            <div class="bg-green-500 w-10 rounded-t" style="height: 160px;"></div>
+                            <span class="text-xs mt-1">Q1</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-red-500 w-10 rounded-t" style="height: 50px;"></div>
+                            <span class="text-xs mt-1">Q2</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-yellow-500 w-10 rounded-t" style="height: 100px;"></div>
+                            <span class="text-xs mt-1">Q3</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-green-500 w-10 rounded-t" style="height: 160px;"></div>
+                            <span class="text-xs mt-1">Q4</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-green-500 w-10 rounded-t" style="height: 130px;"></div>
+                            <span class="text-xs mt-1">Q5</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Escala vertical -->
+                    <div class="flex flex-col h-48 justify-between absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-gray-500">
+                        <span>100%</span>
+                        <span>80%</span>
+                        <span>60%</span>
+                        <span>40%</span>
+                        <span>20%</span>
+                        <span>0%</span>
+                    </div>
+                </div>
+
+                <!-- Detalhes das questões -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mt-12">
+                    <div class="bg-quiz-light-gray p-4 rounded-lg border border-gray-200">
+                        <h5 class="text-md font-medium text-gray-900 mb-2">Questão 1</h5>
+                        <p class="text-sm text-gray-600">Detalhes da questão 1 e estatísticas de desempenho.</p>
+                    </div>
+                    <div class="bg-quiz-light-gray p-4 rounded-lg border border-gray-200">
+                        <h5 class="text-md font-medium text-gray-900 mb-2">Questão 2</h5>
+                        <p class="text-sm text-gray-600">Detalhes da questão 2 e estatísticas de desempenho.</p>
+                    </div>
+                    <div class="bg-quiz-light-gray p-4 rounded-lg border border-gray-200">
+                        <h5 class="text-md font-medium text-gray-900 mb-2">Questão 3</h5>
+                        <p class="text-sm text-gray-600">Detalhes da questão 3 e estatísticas de desempenho.</p>
+                    </div>
+                    <div class="bg-quiz-light-gray p-4 rounded-lg border border-gray-200">
+                        <h5 class="text-md font-medium text-gray-900 mb-2">Questão 4</h5>
+                        <p class="text-sm text-gray-600">Detalhes da questão 4 e estatísticas de desempenho.</p>
+                    </div>
+                    <div class="bg-quiz-light-gray p-4 rounded-lg border border-gray-200">
+                        <h5 class="text-md font-medium text-gray-900 mb-2">Questão 5</h5>
+                        <p class="text-sm text-gray-600">Detalhes da questão 5 e estatísticas de desempenho.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mt-12">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-6">Ranking</h3>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="grid grid-cols-3 gap-4 items-center bg-quiz-light-gray px-6 py-3 border-b border-gray-200">
+                        <div>
+                            <span class="text-sm font-semibold text-gray-600 uppercase">Nome</span>
+                        </div>
+                        <div>
+                            <span class="text-sm font-semibold text-gray-600 uppercase">Outras informações</span>
+                        </div>
+                        <div>
+                            <span class="text-sm font-semibold text-gray-600 uppercase">Total de Acertos</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-4 items-center px-6 py-4 border-b border-gray-100 hover:bg-gray-50">
+                        <div>
+                            <p class="text-md font-medium text-gray-900">1. Aluno 1</p>
+                        </div>
+                        <div>
+                            <p class="text-md text-gray-600">Placeholder</p>
+                        </div>
+                        <div>
+                            <p class="text-md text-gray-600">100%</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-4 items-center px-6 py-4 border-b border-gray-100 hover:bg-gray-50">
+                        <div>
+                            <p class="text-md font-medium text-gray-900">2. Aluno 2</p>
+                        </div>
+                        <div>
+                            <p class="text-md text-gray-600">Placeholder</p>
+                        </div>
+                        <div>
+                            <p class="text-md text-gray-600">100%</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-4 items-center px-6 py-4 border-b border-gray-100 hover:bg-gray-50">
+                        <div>
+                            <p class="text-md font-medium text-gray-900">3. Aluno 3</p>
+                        </div>
+                        <div>
+                            <p class="text-md text-gray-600">Placeholder</p>
+                        </div>
+                        <div>
+                            <p class="text-md text-gray-600">100%</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-4 items-center px-6 py-4 hover:bg-gray-50">
+                        <div>
+                            <p class="text-md font-medium text-gray-900">4. Aluno 4</p>
+                        </div>
+                        <div>
+                            <p class="text-md text-gray-600">Placeholder</p>
+                        </div>
+                        <div>
+                            <p class="text-md text-gray-600">100%</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
