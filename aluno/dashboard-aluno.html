@@ -52,20 +52,33 @@
                 <h2 class="text-3xl font-light text-gray-800 mb-4 md:mb-0">Olá, [nome Aluno]</h2>
                 
                 <div class="flex items-center space-x-3">
-                    <img class="w-10 h-10 rounded-full" src="https://via.placeholder.com/40" alt="Avatar do Aluno">
+                    <img class="w-10 h-10 rounded-full" src="../assets/bob-esponja.jpeg" alt="Avatar do Aluno">
                     <span class="font-medium text-gray-800">Nome aluno</span>
-                    <button class="bg-purple-600 text-white text-sm font-semibold py-2 px-4 rounded-lg hover:bg-purple-700">
+                    <a href="estatisticas-aluno.html">
+                    <button  class="bg-purple-600 text-white text-sm font-semibold py-2 px-4 rounded-lg hover:bg-purple-700">
                         Estatísticas
                     </button>
+                    </a>
+                    <a href="../aluno/matricula-aluno.html">
+                       <button class=" hover:bg-purple-700 text-white py-2 px-4 rounded-lg text-sm font-medium bg-purple-600 flex items-center space-x-1">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            <span>Matrícula</span>
+                        </button>
+                    </a>
+
                 </div>
             </section>
 
             <section class="bg-quiz-light-gray p-6 rounded-lg flex justify-between items-center mb-10 max-w-md">
                 <div>
                     <p class="text-sm text-gray-600">Continuar de onde parou</p>
+                    <a href="../quiz/resolver-quiz.html">
                     <button class="bg-quiz-dark text-white py-2 px-5 rounded-lg text-sm font-medium mt-2 hover:bg-gray-800">
                         Ir para quiz
                     </button>
+                    </a>
                 </div>
             </section>
 
@@ -92,9 +105,11 @@
                             <div class="bg-quiz-progress h-2 rounded-full" style="width: 33%"></div>
                         </div>
                         <p class="text-sm text-gray-600 mb-4">Descrição dos quizzes</p>
-                        <button class="bg-quiz-dark text-white py-2 px-4 rounded-lg text-sm font-medium hover:bg-gray-800">
-                            Detalhes
-                        </button>
+                        <a href="detalhes-disciplina.html">
+                            <button class="bg-quiz-dark text-white py-2 px-4 rounded-lg text-sm font-medium hover:bg-gray-800">
+                                Detalhes
+                            </button>
+                        </a>
                     </div>
 
                     <div class="bg-quiz-light-gray p-5 rounded-lg border border-gray-200">
