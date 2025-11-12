@@ -52,12 +52,12 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                         </svg>
                     </div>
-                    <button class="bg-quiz-dark text-white py-2 px-4 rounded-lg text-sm font-medium hover:bg-gray-800 flex items-center space-x-1">
+                    <a href="cadastro-novo-quiz.html" class="bg-quiz-dark text-white py-2 px-4 rounded-lg text-sm font-medium hover:bg-gray-800 flex items-center space-x-1">
                         <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                         </svg>
                         <span>Cadastrar</span>
-                    </button>
+                    </a>
                 </div>
             </section>
 
@@ -220,4 +220,21 @@
         </div>
     </main>
 </body>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Função para deletar quiz
+    const deleteButtons = document.querySelectorAll('button.text-gray-700.hover\\:text-gray-900');
+    deleteButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const nomeQuiz = this.closest('.grid').querySelector('p.text-md.font-medium').textContent;
+            if (confirm(`Tem certeza que deseja excluir o quiz "${nomeQuiz}"?`)) {
+                alert(`Quiz "${nomeQuiz}" excluído com sucesso!`);
+                this.closest('.grid').remove();
+            }
+        });
+    });
+});
+</script>
+
 </html>
