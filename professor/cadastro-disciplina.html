@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Disciplina - QuizRanking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        'quiz-purple': '#7F56D9',
+                        'quiz-dark': '#101828',
+                        'quiz-light-gray': '#F9FAFB',
+                        'quiz-text': '#344054',
+                        'quiz-progress': '#374151',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 font-sans">
+    <header class="bg-black text-white">
+        <div class="container mx-auto max-w-7xl px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold px-2 py-1">QuizRanking</h1>
+            <button class="bg-white text-black text-sm font-semibold py-2 px-4 rounded-lg">
+                Voltar
+            </button>
+        </div>
+    </header>
+
+    <main class="bg-white text-quiz-text min-h-screen">
+        <div class="container mx-auto max-w-4xl px-6 py-10">
+            <h1 class="text-4xl font-bold text-center text-gray-900 mb-10">
+                Cadastro de Disciplina
+            </h1>
+
+            <div class="bg-quiz-light-gray p-8 rounded-lg border border-gray-200 max-w-md mx-auto">
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Nome</label>
+                    <input type="text" 
+                           class="w-full border border-gray-300 rounded-lg py-2 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-purple-600"
+                           placeholder="Nome da disciplina">
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Carga Horária</label>
+                    <input type="text" 
+                           class="w-full border border-gray-300 rounded-lg py-2 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-purple-600"
+                           placeholder="Carga horária">
+                </div>
+
+                <button class="w-full bg-quiz-dark text-white py-2 px-4 rounded-lg text-sm font-medium hover:bg-gray-800">
+                    Cadastrar
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

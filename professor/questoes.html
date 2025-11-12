@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questões - QuizRanking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        'quiz-purple': '#7F56D9',
+                        'quiz-dark': '#101828',
+                        'quiz-light-gray': '#F9FAFB',
+                        'quiz-text': '#344054',
+                        'quiz-progress': '#374151',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 font-sans">
+    <header class="bg-black text-white">
+        <div class="container mx-auto max-w-7xl px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold px-2 py-1">QuizRanking</h1>
+            <button class="bg-white text-black text-sm font-semibold py-2 px-4 rounded-lg">
+                Voltar
+            </button>
+        </div>
+    </header>
+
+    <main class="bg-white text-quiz-text min-h-screen">
+        <div class="container mx-auto max-w-7xl px-6 py-8">
+            <section class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
+                <h2 class="text-3xl font-semibold text-gray-900 mb-4 md:mb-0">Questionário 1 - Questões</h2>
+                
+                <div class="flex space-x-4">
+                    <div class="relative">
+                        <input type="text" placeholder="Pesquisar Questão" 
+                               class="border border-gray-300 rounded-lg py-2 px-4 pl-10 text-sm focus:outline-none focus:ring-2 focus:ring-purple-600"
+                        >
+                        <svg class="w-5 h-5 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </div>
+                    <button class="bg-quiz-dark text-white py-2 px-4 rounded-lg text-sm font-medium hover:bg-gray-800 flex items-center space-x-1">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <span>Adicionar Questão</span>
+                    </button>
+                </div>
+            </section>
+
+            <div class="space-y-6">
+                <div class="bg-quiz-light-gray p-5 rounded-lg border border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Questão 1</h3>
+                    <p class="text-sm text-gray-600 mb-4">Descrição 1</p>
+                    <div class="flex space-x-2">
+                        <button class="bg-quiz-dark text-white py-1 px-3 rounded text-xs font-medium hover:bg-gray-800">
+                            Editar
+                        </button>
+                        <button class="bg-red-600 text-white py-1 px-3 rounded text-xs font-medium hover:bg-red-700">
+                            Excluir
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-quiz-light-gray p-5 rounded-lg border border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Questão 2</h3>
+                    <p class="text-sm text-gray-600 mb-2">Descrição 2</p>
+                    <div class="space-y-1 mb-4">
+                        <p class="text-sm text-gray-600">a) a</p>
+                        <p class="text-sm text-gray-600">b) b</p>
+                        <p class="text-sm text-gray-600">c) c</p>
+                        <p class="text-sm text-gray-600">d) d</p>
+                    </div>
+                    <div class="flex space-x-2">
+                        <button class="bg-quiz-dark text-white py-1 px-3 rounded text-xs font-medium hover:bg-gray-800">
+                            Editar
+                        </button>
+                        <button class="bg-red-600 text-white py-1 px-3 rounded text-xs font-medium hover:bg-red-700">
+                            Excluir
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-quiz-light-gray p-5 rounded-lg border border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Questão 3</h3>
+                    <p class="text-sm text-gray-600 mb-4">Descrição 3</p>
+                    <div class="flex space-x-2">
+                        <button class="bg-quiz-dark text-white py-1 px-3 rounded text-xs font-medium hover:bg-gray-800">
+                            Editar
+                        </button>
+                        <button class="bg-red-600 text-white py-1 px-3 rounded text-xs font-medium hover:bg-red-700">
+                            Excluir
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
